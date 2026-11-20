@@ -1,3 +1,4 @@
+
 :root {
   --primary-color: #075985;
   --secondary-color: #f4a261;
@@ -68,6 +69,7 @@ h1, h2 {
   line-height: 1.2;
 }
 
+/* Hero section */
 .hero {
   position: relative;
   margin-top: 18px;
@@ -80,6 +82,7 @@ h1, h2 {
   object-fit: cover;
 }
 
+/* Hero heading overlay */
 .hero h1 {
   position: absolute;
   top: 22px;
@@ -92,7 +95,8 @@ h1, h2 {
   letter-spacing: 1px;
 }
 
-.hero-article {
+/* Hero article overlay */
+.hero article {
   position: absolute;
   right: 28px;
   bottom: 28px;
@@ -103,7 +107,8 @@ h1, h2 {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 
-.hero-article img {
+/* Image inside the hero article */
+.hero article img {
   float: right;
   width: 145px;
   margin: 0 0 12px 18px;
@@ -111,10 +116,11 @@ h1, h2 {
   border-radius: 6px;
 }
 
-.hero-article p {
+.hero article p {
   font-size: 1rem;
 }
 
+/* History and adventures sections */
 .history, .adventures {
   margin: 34px 0;
   padding: 24px;
@@ -147,6 +153,7 @@ h1, h2 {
   background-color: var(--accent2-color);
 }
 
+/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
@@ -174,6 +181,7 @@ footer {
   object-fit: contain;
 }
 
+/* Responsive design */
 @media (max-width: 650px) {
   header {
     grid-template-columns: 1fr;
@@ -188,14 +196,14 @@ footer {
     height: 520px;
   }
 
-  .hero-article {
+  .hero article {
     right: 12px;
     bottom: 12px;
     left: 12px;
     padding: 14px;
   }
 
-  .hero-article img {
+  .hero article img {
     width: 105px;
   }
 
